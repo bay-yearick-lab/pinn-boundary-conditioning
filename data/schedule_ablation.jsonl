@@ -1,0 +1,12 @@
+{"schedule": "jump", "seed": 0, "lam_end": 10000.0, "rel_l2": 0.02122417278587818, "bnd_rms": 0.00821777619421482, "accum_kappa": 11369239.439354526, "n_probe": 20}
+{"schedule": "jump", "seed": 1, "lam_end": 10000.0, "rel_l2": 0.030942512676119804, "bnd_rms": 0.02052444778382778, "accum_kappa": 14863768.880704291, "n_probe": 20}
+{"schedule": "jump", "seed": 2, "lam_end": 10000.0, "rel_l2": 0.007290714420378208, "bnd_rms": 0.005053326487541199, "accum_kappa": 16894452.439795386, "n_probe": 20}
+{"schedule": "ramp", "seed": 0, "lam_end": 10000.0, "rel_l2": 0.0032633342780172825, "bnd_rms": 0.0027471554931253195, "accum_kappa": 949229.2313923036, "n_probe": 20}
+{"schedule": "ramp", "seed": 1, "lam_end": 10000.0, "rel_l2": 0.0031850291416049004, "bnd_rms": 0.005084487143903971, "accum_kappa": 1092022.8664123714, "n_probe": 20}
+{"schedule": "ramp", "seed": 2, "lam_end": 10000.0, "rel_l2": 0.001629729988053441, "bnd_rms": 0.0023042766842991114, "accum_kappa": 758680.7122843243, "n_probe": 20}
+{"schedule": "cont", "seed": 0, "lam_end": 10000.0, "rel_l2": 0.013924280181527138, "bnd_rms": 0.009761933237314224, "accum_kappa": 8182332.704511435, "n_probe": 20}
+{"schedule": "cont", "seed": 1, "lam_end": 10000.0, "rel_l2": 0.009451670572161674, "bnd_rms": 0.010086090303957462, "accum_kappa": 8334771.151600984, "n_probe": 20}
+{"schedule": "cont", "seed": 2, "lam_end": 10000.0, "rel_l2": 0.026383807882666588, "bnd_rms": 0.015131163410842419, "accum_kappa": 6275535.815257973, "n_probe": 20}
+{"schedule": "cos", "seed": 0, "lam_end": 10000.0, "rel_l2": 0.003552031936123967, "bnd_rms": 0.0027733773458749056, "accum_kappa": 1880152.6556889578, "n_probe": 20}
+{"schedule": "cos", "seed": 1, "lam_end": 10000.0, "rel_l2": 0.0035333477426320314, "bnd_rms": 0.005545623134821653, "accum_kappa": 2102003.480529973, "n_probe": 20}
+{"schedule": "cos", "seed": 2, "lam_end": 10000.0, "rel_l2": 0.0014520995318889618, "bnd_rms": 0.002077211858704686, "accum_kappa": 1470634.4070351461, "n_probe": 20}
