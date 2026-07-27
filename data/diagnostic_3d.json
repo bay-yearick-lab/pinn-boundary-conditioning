@@ -1,0 +1,1076 @@
+{
+ "description": "Prospective boundary-penalty diagnostic on 3D Poisson and a 3D anisotropic high-contrast (multiscale-stiff) elliptic problem. Constants (rho, nu, mu, sigma_B, kappa_red) and predictions (regime, leak brackets, product limit rho*sigma_B^2/mu, valley) committed before an independent float64 direct-solve sweep.",
+ "protocol": "prospective: constants computed before the confirming sweep",
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "testbeds": {
+  "TB1_3d_poisson": [
+   {
+    "seed": 0,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 493.6412196704035,
+     "nu": 1086873.357456698,
+     "mu": 0.030176586453024946,
+     "L_red": 18540.5212155006,
+     "kappa_red": 614400.8781232468,
+     "sigmaB": 1.3690641828242618
+    },
+    "product_pred": 30661.184100929495,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     3436995.337717517,
+     3436995337.717517
+    ],
+    "valley_window": [
+     0.01,
+     1086873357.4566977
+    ],
+    "confirm": {
+     "product_pred": 30661.184100929495,
+     "product_meas": 30412.57768893055,
+     "product_relerr": 0.00810818040101098,
+     "rho_meas": 489.57237214546035,
+     "rho_relerr": 0.008242519795368445,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 3296.7762396873304,
+     "kappa_min": 1178481.2998183111,
+     "floor_holds": true,
+     "floor_ratio": 1.9180983325058196
+    }
+   },
+   {
+    "seed": 1,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 112.9872385877869,
+     "nu": 234779.89912434426,
+     "mu": 0.01540542286574387,
+     "L_red": 18668.824438034928,
+     "kappa_red": 1211834.598811805,
+     "sigmaB": 1.2660289452205804
+    },
+    "product_pred": 11755.552379079902,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     742439.2300574988,
+     742439230.0575004
+    ],
+    "valley_window": [
+     0.01,
+     234779899.12434453
+    ],
+    "confirm": {
+     "product_pred": 11755.552379079902,
+     "product_meas": 11748.143091965996,
+     "product_relerr": 0.0006302797924741534,
+     "rho_meas": 112.88082315262415,
+     "rho_relerr": 0.0009418358789260829,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 7805.863859135687,
+     "kappa_min": 2347641.591364385,
+     "floor_holds": true,
+     "floor_ratio": 1.9372623901531039
+    }
+   },
+   {
+    "seed": 2,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 236.974918705656,
+     "nu": 1126887.6282679234,
+     "mu": 0.019942073409083515,
+     "L_red": 18261.07154363057,
+     "kappa_red": 915705.7628377168,
+     "sigmaB": 1.2801738389431896
+    },
+    "product_pred": 19474.663762573786,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     3563531.5723917834,
+     3563531572.391783
+    ],
+    "valley_window": [
+     0.01,
+     1126887628.2679234
+    ],
+    "confirm": {
+     "product_pred": 19474.663762573786,
+     "product_meas": 19420.234341078572,
+     "product_relerr": 0.002794883760705293,
+     "rho_meas": 236.27223627202636,
+     "rho_relerr": 0.0029652185871300043,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 5985.761523217035,
+     "kappa_min": 1945481.559773577,
+     "floor_holds": true,
+     "floor_ratio": 2.1245706194363647
+    }
+   },
+   {
+    "seed": 3,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 934.3841695845751,
+     "nu": 2944898.2041087635,
+     "mu": 0.017047618210333147,
+     "L_red": 17147.68540825369,
+     "kappa_red": 1005869.863853467,
+     "sigmaB": 1.2572878391799813
+    },
+    "product_pred": 86642.54315326025,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     9312585.802323125,
+     9312585802.323107
+    ],
+    "valley_window": [
+     0.01,
+     2944898204.1087584
+    ],
+    "confirm": {
+     "product_pred": 86642.54315326025,
+     "product_meas": 85847.24454373584,
+     "product_relerr": 0.009179077397550816,
+     "rho_meas": 925.7135934556538,
+     "rho_relerr": 0.009279455293828691,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 2977.6555318567857,
+     "kappa_min": 2010970.420945898,
+     "floor_holds": true,
+     "floor_ratio": 1.999235182612899
+    }
+   },
+   {
+    "seed": 4,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 95.61151372644838,
+     "nu": 103624.75498510641,
+     "mu": 0.018476482955930327,
+     "L_red": 19758.951909161773,
+     "kappa_red": 1069410.880647056,
+     "sigmaB": 1.2700238338127843
+    },
+    "product_pred": 8346.69666463629,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     327690.2477298237,
+     327690247.72982436
+    ],
+    "valley_window": [
+     0.01,
+     103624754.98510656
+    ],
+    "confirm": {
+     "product_pred": 8346.69666463629,
+     "product_meas": 8336.505351237305,
+     "product_relerr": 0.0012209996131960397,
+     "rho_meas": 95.39380662034065,
+     "rho_relerr": 0.002276996750941528,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 8283.777811599819,
+     "kappa_min": 2118568.3903120193,
+     "floor_holds": true,
+     "floor_ratio": 1.981061188595876
+    }
+   },
+   {
+    "seed": 5,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 180.724105052147,
+     "nu": 115818.50700030783,
+     "mu": 0.02091582794141399,
+     "L_red": 18004.265728880604,
+     "kappa_red": 860796.2247208775,
+     "sigmaB": 1.265406943996163
+    },
+    "product_pred": 13835.709949309574,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     366250.2773211285,
+     366250277.32112926
+    ],
+    "valley_window": [
+     0.01,
+     115818507.00030807
+    ],
+    "confirm": {
+     "product_pred": 13835.709949309574,
+     "product_meas": 13755.834471038466,
+     "product_relerr": 0.00577313911347885,
+     "rho_meas": 179.54905603881022,
+     "rho_relerr": 0.006501894216035656,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 5224.631449846707,
+     "kappa_min": 1726424.0761030794,
+     "floor_holds": true,
+     "floor_ratio": 2.005612973805608
+    }
+   },
+   {
+    "seed": 6,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 132.1680251179493,
+     "nu": 149540.39657332702,
+     "mu": 0.015316236646792153,
+     "L_red": 18310.54881777868,
+     "kappa_red": 1195499.210415612,
+     "sigmaB": 1.4120830380453382
+    },
+    "product_pred": 17206.589803192808,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     472888.2553765519,
+     472888255.3765529
+    ],
+    "valley_window": [
+     0.01,
+     149540396.57332727
+    ],
+    "confirm": {
+     "product_pred": 17206.589803192808,
+     "product_meas": 17160.866111952935,
+     "product_relerr": 0.00265733604176399,
+     "rho_meas": 131.74436189041754,
+     "rho_relerr": 0.0032054895815661656,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 6041.055143228157,
+     "kappa_min": 2576970.2052694997,
+     "floor_holds": true,
+     "floor_ratio": 2.155559939160163
+    }
+   },
+   {
+    "seed": 7,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 110.1754367552082,
+     "nu": 93996.42015155545,
+     "mu": 0.02143810157708748,
+     "L_red": 19660.309101303214,
+     "kappa_red": 917073.2320027662,
+     "sigmaB": 1.2743889435159867
+    },
+    "product_pred": 8346.462496313667,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     297242.7795810648,
+     297242779.5810648
+    ],
+    "valley_window": [
+     0.01,
+     93996420.1515555
+    ],
+    "confirm": {
+     "product_pred": 8346.462496313667,
+     "product_meas": 8337.263421760352,
+     "product_relerr": 0.0011021525056127382,
+     "rho_meas": 109.99103624391333,
+     "rho_relerr": 0.0016736989362209262,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 2753.4608030604354,
+     "kappa_min": 1449042.2970810307,
+     "floor_holds": true,
+     "floor_ratio": 1.5800726119946982
+    }
+   },
+   {
+    "seed": 8,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 350.30615231076325,
+     "nu": 1006084.1517931476,
+     "mu": 0.013663113932363292,
+     "L_red": 20112.37239744181,
+     "kappa_red": 1472019.6652830662,
+     "sigmaB": 1.3538900759140342
+    },
+    "product_pred": 46996.43171819454,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     3181517.4374649227,
+     3181517437.464929
+    ],
+    "valley_window": [
+     0.01,
+     1006084151.7931494
+    ],
+    "confirm": {
+     "product_pred": 46996.43171819454,
+     "product_meas": 46786.07190318756,
+     "product_relerr": 0.004476080572847695,
+     "rho_meas": 348.3165993888457,
+     "rho_relerr": 0.0056794689696245465,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 5641.271796996231,
+     "kappa_min": 3036130.2209607954,
+     "floor_holds": true,
+     "floor_ratio": 2.0625609104053337
+    }
+   },
+   {
+    "seed": 9,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 270.34770769402866,
+     "nu": 2822575.1801307425,
+     "mu": 0.015373282983015258,
+     "L_red": 19978.934313730264,
+     "kappa_red": 1299588.0148569066,
+     "sigmaB": 1.2199733822654835
+    },
+    "product_pred": 26173.197385471525,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     8925766.436273182,
+     8925766436.273182
+    ],
+    "valley_window": [
+     0.01,
+     2822575180.1307406
+    ],
+    "confirm": {
+     "product_pred": 26173.197385471525,
+     "product_meas": 26013.699369894504,
+     "product_relerr": 0.006093944626939488,
+     "rho_meas": 268.66600193220603,
+     "rho_relerr": 0.006220529022298687,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 5312.7913380169,
+     "kappa_min": 2752265.1066105957,
+     "floor_holds": true,
+     "floor_ratio": 2.1177981599912172
+    }
+   }
+  ],
+  "TB2_3d_stiff": [
+   {
+    "seed": 0,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     40.0,
+     1600.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 79068971.79155481,
+     "nu": 51504471913.519035,
+     "mu": 12101.778302040506,
+     "L_red": 9735297139.51904,
+     "kappa_red": 804451.7835761006,
+     "sigmaB": 1.3690641828242618
+    },
+    "product_pred": 12246.289335543923,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     162871440930.89066,
+     162871440930890.66
+    ],
+    "valley_window": [
+     0.01,
+     51504471913518.93
+    ],
+    "confirm": {
+     "product_pred": 12246.289335543923,
+     "product_meas": 12238.52948208409,
+     "product_relerr": 0.000633649364898674,
+     "rho_meas": 78754585.81630558,
+     "rho_relerr": 0.003976097932296746,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 2671753081.6902685,
+     "kappa_min": 2393959.9103931845,
+     "floor_holds": true,
+     "floor_ratio": 2.9758898659545547
+    }
+   },
+   {
+    "seed": 1,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     40.0,
+     1600.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 69416128.403223,
+     "nu": 45945232734.73503,
+     "mu": 5184.567610981623,
+     "L_red": 10503231003.618523,
+     "kappa_red": 2025864.4098634655,
+     "sigmaB": 1.2660289452205804
+    },
+    "product_pred": 21460.26673022492,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     145291583068.28964,
+     145291583068289.66
+    ],
+    "valley_window": [
+     0.01,
+     45945232734735.07
+    ],
+    "confirm": {
+     "product_pred": 21460.26673022492,
+     "product_meas": 21394.702885658,
+     "product_relerr": 0.003055127198143351,
+     "rho_meas": 69122358.26733911,
+     "rho_relerr": 0.004232015565279536,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 5580592895.03105,
+     "kappa_min": 3880061.802628206,
+     "floor_holds": true,
+     "floor_ratio": 1.9152623362832588
+    }
+   },
+   {
+    "seed": 2,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     40.0,
+     1600.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 38611338.96193999,
+     "nu": 973406950128.1951,
+     "mu": 5141.8187945349155,
+     "L_red": 10087314547.287552,
+     "kappa_red": 1961818.3662965826,
+     "sigmaB": 1.2801738389431896
+    },
+    "product_pred": 12306.540655321207,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     3078183052643.021,
+     3078183052643021.0
+    ],
+    "valley_window": [
+     0.01,
+     973406950128193.1
+    ],
+    "confirm": {
+     "product_pred": 12306.540655321207,
+     "product_meas": 12305.371648414908,
+     "product_relerr": 9.499069958326213e-05,
+     "rho_meas": 38606123.899965584,
+     "rho_relerr": 0.00013506555624882212,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 3827613072.5459466,
+     "kappa_min": 3247261.2461146466,
+     "floor_holds": true,
+     "floor_ratio": 1.6552303219816702
+    }
+   },
+   {
+    "seed": 3,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     40.0,
+     1600.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 524332752.5706339,
+     "nu": 270038612618.45316,
+     "mu": 6837.96720984837,
+     "L_red": 10263500790.553623,
+     "kappa_red": 1500957.883473269,
+     "sigmaB": 1.2572878391799813
+    },
+    "product_pred": 121213.05661094755,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     853937072066.1969,
+     853937072066196.9
+    ],
+    "valley_window": [
+     0.01,
+     270038612618453.0
+    ],
+    "confirm": {
+     "product_pred": 121213.05661094755,
+     "product_meas": 120124.0710504117,
+     "product_relerr": 0.008984061544055583,
+     "rho_meas": 519268608.3914031,
+     "rho_relerr": 0.009658264059231373,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 3772996540.8205795,
+     "kappa_min": 3506475.0762606766,
+     "floor_holds": true,
+     "floor_ratio": 2.336158205949504
+    }
+   },
+   {
+    "seed": 4,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     40.0,
+     1600.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 47608999.242080815,
+     "nu": 63137148255.02147,
+     "mu": 3733.7970517377057,
+     "L_red": 10211675578.094269,
+     "kappa_red": 2734930.537625703,
+     "sigmaB": 1.2700238338127843
+    },
+    "product_pred": 20566.580343983547,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     199657193453.5934,
+     199657193453593.4
+    ],
+    "valley_window": [
+     0.01,
+     63137148255021.484
+    ],
+    "confirm": {
+     "product_pred": 20566.580343983547,
+     "product_meas": 20511.903074446196,
+     "product_relerr": 0.0026585493855980843,
+     "rho_meas": 47447145.8874844,
+     "rho_relerr": 0.0033996378242152616,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 3098249127.120454,
+     "kappa_min": 4226267.852190656,
+     "floor_holds": true,
+     "floor_ratio": 1.5452925747282924
+    }
+   },
+   {
+    "seed": 5,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     40.0,
+     1600.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 41431735.97537994,
+     "nu": 36158292327.95026,
+     "mu": 4703.896958467061,
+     "L_red": 9565099369.677391,
+     "kappa_red": 2033441.5175613312,
+     "sigmaB": 1.265406943996163
+    },
+    "product_pred": 14103.787551175497,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     114342560058.51501,
+     114342560058515.02
+    ],
+    "valley_window": [
+     0.01,
+     36158292327950.33
+    ],
+    "confirm": {
+     "product_pred": 14103.787551175497,
+     "product_meas": 14073.588417442797,
+     "product_relerr": 0.002141207361719153,
+     "rho_meas": 41300133.160284415,
+     "rho_relerr": 0.003176377045212977,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 4662898195.699937,
+     "kappa_min": 3413146.6947904374,
+     "floor_holds": true,
+     "floor_ratio": 1.6785074295540898
+    }
+   },
+   {
+    "seed": 6,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     40.0,
+     1600.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 62470709.988333434,
+     "nu": 80979653067.23749,
+     "mu": 6099.044818002613,
+     "L_red": 10500514764.300362,
+     "kappa_red": 1721665.4537946475,
+     "sigmaB": 1.4120830380453382
+    },
+    "product_pred": 20423.731372585677,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     256080147822.71115,
+     256080147822711.16
+    ],
+    "valley_window": [
+     0.01,
+     80979653067237.58
+    ],
+    "confirm": {
+     "product_pred": 20423.731372585677,
+     "product_meas": 20377.92516516261,
+     "product_relerr": 0.0022427932774590985,
+     "rho_meas": 62247191.72611049,
+     "rho_relerr": 0.0035779689756157453,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 3713025534.4702053,
+     "kappa_min": 3843451.6249123802,
+     "floor_holds": true,
+     "floor_ratio": 2.2324032909188
+    }
+   },
+   {
+    "seed": 7,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     40.0,
+     1600.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 70458347.54201709,
+     "nu": 38424936030.38798,
+     "mu": 4648.969235321357,
+     "L_red": 11130402430.612896,
+     "kappa_red": 2394165.645590364,
+     "sigmaB": 1.2743889435159867
+    },
+    "product_pred": 24613.862549409623,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     121510316802.29504,
+     121510316802295.03
+    ],
+    "valley_window": [
+     0.01,
+     38424936030388.01
+    ],
+    "confirm": {
+     "product_pred": 24613.862549409623,
+     "product_meas": 24602.304832279275,
+     "product_relerr": 0.00046956129324065324,
+     "rho_meas": 70286873.05517095,
+     "rho_relerr": 0.002433700091303973,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 4880449967.049118,
+     "kappa_min": 4823399.592562288,
+     "floor_holds": true,
+     "floor_ratio": 2.0146473997929717
+    }
+   },
+   {
+    "seed": 8,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     40.0,
+     1600.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 101456074.52580272,
+     "nu": 310300680145.3806,
+     "mu": 3764.351482588908,
+     "L_red": 11315641802.165112,
+     "kappa_red": 3006000.330867843,
+     "sigmaB": 1.3538900759140342
+    },
+    "product_pred": 49403.156408961186,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     981256908758.7905,
+     981256908758790.5
+    ],
+    "valley_window": [
+     0.01,
+     310300680145380.5
+    ],
+    "confirm": {
+     "product_pred": 49403.156408961186,
+     "product_meas": 49293.16364182513,
+     "product_relerr": 0.0022264319758343422,
+     "rho_meas": 101215665.73850504,
+     "rho_relerr": 0.0023695849501504146,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 4161123043.918222,
+     "kappa_min": 4581152.267217049,
+     "floor_holds": true,
+     "floor_ratio": 1.5240025824928818
+    }
+   },
+   {
+    "seed": 9,
+    "n_features": 216,
+    "m": 1600,
+    "b": 72,
+    "anisotropy": [
+     1.0,
+     40.0,
+     1600.0
+    ],
+    "frequencies": [
+     2.4,
+     1.7,
+     1.3
+    ],
+    "J": 3,
+    "constants": {
+     "rho": 84683681.67977338,
+     "nu": 651733796626.6158,
+     "mu": 8736.750465398634,
+     "L_red": 11249867228.656746,
+     "kappa_red": 1287648.9117104989,
+     "sigmaB": 1.2199733822654835
+    },
+    "product_pred": 14426.15219436692,
+    "regime_costly": true,
+    "leak_plateau_window": [
+     2060963225449.0654,
+     2060963225449065.5
+    ],
+    "valley_window": [
+     0.01,
+     651733796626614.6
+    ],
+    "confirm": {
+     "product_pred": 14426.15219436692,
+     "product_meas": 14333.742704478977,
+     "product_relerr": 0.006405692151509864,
+     "rho_meas": 84114448.60700653,
+     "rho_relerr": 0.006721874409279507,
+     "leak_brackets_hold": true,
+     "n_exact_pts": 40,
+     "lam_valley": 2911647540.200149,
+     "kappa_min": 2144758.689377838,
+     "floor_holds": true,
+     "floor_ratio": 1.6656393446011333
+    }
+   }
+  ]
+ },
+ "summary": [
+  {
+   "testbed": "3D Poisson",
+   "rho": {
+    "median": 208.8495118789015,
+    "min": 95.61151372644838,
+    "max": 934.3841695845751
+   },
+   "kappa_red": {
+    "median": 1037640.3722502615,
+    "min": 614400.8781232468,
+    "max": 1472019.6652830662
+   },
+   "product_pred": {
+    "median": 18340.626782883297,
+    "min": 8346.462496313667,
+    "max": 86642.54315326025
+   },
+   "product_meas": {
+    "median": 18290.550226515756,
+    "min": 8336.505351237305,
+    "max": 85847.24454373584
+   },
+   "product_relerr": {
+    "median": 0.0036354821667764943,
+    "min": 0.0006302797924741534,
+    "max": 0.009179077397550816
+   },
+   "rho_relerr": {
+    "median": 0.0044424792755953565,
+    "min": 0.0009418358789260829,
+    "max": 0.009279455293828691
+   },
+   "valley_weight": {
+    "median": 5477.031567506566,
+    "min": 2753.4608030604354,
+    "max": 8283.777811599819
+   },
+   "floor_ratio": {
+    "median": 2.0024240782092533,
+    "min": 1.5800726119946982,
+    "max": 2.155559939160163
+   },
+   "leak_brackets_all_hold": true,
+   "fence_floor_all_hold": true,
+   "n_seeds": 10
+  },
+  {
+   "testbed": "3D stiff anisotropic",
+   "rho": {
+    "median": 69937237.97262004,
+    "min": 38611338.96193999,
+    "max": 524332752.5706339
+   },
+   "kappa_red": {
+    "median": 1993841.3880800242,
+    "min": 804451.7835761006,
+    "max": 3006000.330867843
+   },
+   "product_pred": {
+    "median": 20495.155858284612,
+    "min": 12246.289335543923,
+    "max": 121213.05661094755
+   },
+   "product_meas": {
+    "median": 20444.9141198044,
+    "min": 12238.52948208409,
+    "max": 120124.0710504117
+   },
+   "product_relerr": {
+    "median": 0.00223461262664672,
+    "min": 9.499069958326213e-05,
+    "max": 0.008984061544055583
+   },
+   "rho_relerr": {
+    "median": 0.0034888033999155034,
+    "min": 0.00013506555624882212,
+    "max": 0.009658264059231373
+   },
+   "valley_weight": {
+    "median": 3800304806.683263,
+    "min": 2671753081.6902685,
+    "max": 5580592895.03105
+   },
+   "floor_ratio": {
+    "median": 1.7968848829186743,
+    "min": 1.5240025824928818,
+    "max": 2.9758898659545547
+   },
+   "leak_brackets_all_hold": true,
+   "fence_floor_all_hold": true,
+   "n_seeds": 10
+  }
+ ]
+}
