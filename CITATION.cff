@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this code or the results, please cite the paper."
+title: "Soft Boundary Conditions in Physics-Informed Neural Networks: A Penalty-Method Analysis of Leakage, Conditioning, and Structural Escapes"
+type: software
+authors:
+  - family-names: Bay
+    given-names: Yong Yi
+  - family-names: Yearick
+    given-names: Kathleen A.
+repository-code: "https://github.com/bay-yearick-lab/pinn-boundary-conditioning"
+license: MIT
+version: 1.0.0
+date-released: 2026-11-07
+keywords:
+  - physics-informed neural networks
+  - PINN
+  - physics-informed DeepONet
+  - neural operators
+  - boundary conditions
+  - penalty method
+  - conditioning
+  - augmented Lagrangian
+  - hard constraints
+  - scientific machine learning
+abstract: "Code and data for a penalty-method analysis of soft boundary conditions in physics-informed neural networks. In the fixed-feature or tangent-kernel regime the boundary violation of the penalized minimizer equals (N + lambda I)^{-1} y*, is bracketed by rho/(lambda+nu) <= leak <= rho/lambda at every weight, and its product with the condition number tends to rho sigma_B^2 / mu. Trained tanh PINNs, a physics-informed DeepONet, and GPU-trained 3D networks confirm the predicted conditioning valley and the advantage of hard trial spaces, multiplier updates, and consistent boundary penalties."
+preferred-citation:
+  type: article
+  title: "Soft Boundary Conditions in Physics-Informed Neural Networks: A Penalty-Method Analysis of Leakage, Conditioning, and Structural Escapes"
+  authors:
+    - family-names: Bay
+      given-names: Yong Yi
+    - family-names: Yearick
+      given-names: Kathleen A.
+  year: 2026
+  status: in-preparation

@@ -1,0 +1,29 @@
+[project]
+name = "pinn-boundary-conditioning"
+version = "1.0.0"
+description = "Soft boundary conditions in PINNs as a quadratic penalty method: exact leakage law, conditioning valley, and constraint-enforcement escapes."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Yong Yi Bay" },
+    { name = "Kathleen A. Yearick" },
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+# Neural experiments (PINN, physics-informed DeepONet); CUDA builds run on GPU.
+neural = ["torch>=2.4"]
+test = ["pytest>=8"]
+# Rasterizes the paper PDFs for the README hero banner.
+assets = ["pymupdf>=1.24"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

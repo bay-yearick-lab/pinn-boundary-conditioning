@@ -1,0 +1,9 @@
+build/
+__pycache__/
+.pytest_cache/
+.venv/
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.blg
+figures/
